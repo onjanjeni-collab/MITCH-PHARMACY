@@ -1,0 +1,24 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Build output (keep MRAAPI.dll - the project references it from bin\$(Configuration))
+Interface/bin/**
+!Interface/bin/**/
+!Interface/bin/*/MRAAPI.dll
+Interface/bin - Copy/
+Interface/obj/
+
+# NuGet packages (restore with: nuget restore "Interface\RevMax Interface V2.sln")
+Interface/packages/
+
+# Built installer
+Interface/SETUP/
+
+# Signing keys / certificates
+*.pfx
+*.key
+
+# Logs
+*.log
