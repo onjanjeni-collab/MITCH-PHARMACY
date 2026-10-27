@@ -1233,7 +1233,7 @@ namespace Revmax_Interface_Promun
                     string validationUrl = response.Data.ValidationURL ?? "";
                     string mraInvoiceNumber = invoice.InvoiceNumber;
                     decimal vatARate = 0;
-                    decimal.TryParse(ConfigurationManager.AppSettings.Get("VatA") ?? "0.165",
+                    decimal.TryParse(ConfigurationManager.AppSettings.Get("VatA") ?? "0.175",
                         System.Globalization.NumberStyles.Any,
                         System.Globalization.CultureInfo.InvariantCulture, out vatARate);
 
